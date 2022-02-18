@@ -1,7 +1,7 @@
 # Proposal: Video Game Sales
 
 ## Motivation & Purpose
-**Our role:** market analytics consultants
+**Our role:** market analytics consultants  
 **Target audience:** gaming industry investors and developers
 
 The video game industry has experienced unprecedented growth over the last 10 years. It has progressed from a niche market within the entertainment sector to a colossal industry with revenues greater than both the film and sports industries combined! In this environment there are a lot of interested parties looking to catch the rising tide. However, as with any multi-billion-dollar market, there is a tremendous amount of information to distill and it can be challenging to ‘see the forest through the trees’. To address this challenge, we propose the creation of a dashboard app that will allow relative newcomers to the industry to quickly and easily gain a high-level understanding of the market landscape. Our dashboard will allow users to view the sales revenue of various regions while filtering by gaming industry subsectors and genres.
