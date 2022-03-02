@@ -10,7 +10,7 @@ alt.data_transformers.enable('data_server')
 alt.renderers.enable('default')
 
 app = Dash(__name__,  external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server = app.server
 # Call backs
 @app.callback(
     Output('line_global', 'srcDoc'),
