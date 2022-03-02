@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 from line_charts import plotLineGlobal, plotLineGenre, getGenres, getRegions
 from publishers import plotPublishers
 
-alt.data_transformers.enable('data_server')
+# alt.data_transformers.enable('data_server')
 alt.renderers.enable('default')
 
 app = Dash(__name__,  external_stylesheets=[dbc.themes.BOOTSTRAP])
