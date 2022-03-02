@@ -4,4 +4,3 @@ altair
 dash
 dash_bootstrap_components
 plotly
-altair-data-server
