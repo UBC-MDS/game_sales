@@ -2,7 +2,6 @@ from dash import Dash, html, dcc, Input, Output
 import altair as alt
 import pandas as pd
 import numpy as np
-from vega_datasets import data
 import dash_bootstrap_components as dbc
 from line_charts import * 
 from publishers import *
