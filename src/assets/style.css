@@ -1,0 +1,15 @@
+#sidebar {
+    background: linear-gradient(to right, lightsalmon, white);
+}
+
+div > h2 {
+    color: black;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    width: 75%; 
+}
+
+div > h5 {
+    color: red;
+}
+
