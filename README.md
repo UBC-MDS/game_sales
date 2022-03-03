@@ -8,7 +8,7 @@ The following sketch of the dashboard is an outline how the implementation will 
 
 ### Sketch
 
-<img src="img/dashboard_sketch.png" width="700"/>
+<img src="doc/img/dashboard_sketch.png" width="700"/>
 
 ## App description
 
