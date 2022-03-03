@@ -65,9 +65,8 @@ SIDEBAR_STYLE = {
     "top": 0,
     "left": 0,
     "bottom": 0,
-    "width": "16rem",
+    "width": "20rem",
     "padding": "2rem 1rem",
-    "background-color": "#f8f9fa",
 }
 
 # the styles for the main content position it to the right of the sidebar and
@@ -78,9 +77,8 @@ CONTENT_STYLE = {
     "padding": "2rem 1rem",
 }
 
-sidebar = html.Div(
-    [
-       html.H3('Video Game Sales'),
+sidebar = html.Div([
+        html.H2('Video Game Sales'),
         html.Br(),
         html.H5('Genre'),
         dcc.Dropdown(
@@ -93,9 +91,8 @@ sidebar = html.Div(
             id='region_f',
             value='North America',
             options=[{'label': i, 'value': i} for i in getRegions()])
-    ],
-    style=SIDEBAR_STYLE,
-)
+        ],
+    id="sidebar", style=SIDEBAR_STYLE)
 
 content = html.Div([
                 dbc.Row([
@@ -116,7 +113,6 @@ content = html.Div([
                         ]),
                 ]),
             ],
-    
     id="page-content", style=CONTENT_STYLE)
 
 app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
