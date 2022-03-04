@@ -7,6 +7,7 @@ import dash_bootstrap_components as dbc
 
 from src.line_charts import *
 from src.publishers import *
+from src.platforms import *
 
 #alt.data_transformers.enable('data_server')
 # alt.renderers.enable('default')
@@ -37,6 +38,13 @@ def update_output(value):
     return plotPublishers(value)
 
 
+@app.callback(
+    Output('platforms', 'srcDoc'),
+    Input('platforms-slider', 'value'))
+def update_output(value):
+    return plotPlatforms(value)
+
+
 # Chart drawing functions
 def lineGlobalFigure():
     return  html.Iframe(
@@ -60,6 +68,17 @@ def publishersFigure():
          dcc.Slider(0, 20, 5,
                value=10,
                id='topn-slider')
+    ])
+
+def platformsFigure():
+    return  html.Div([
+        html.Iframe(
+                    id=f'platforms',
+                    style={'border-width': '0', 'width': '100%', 'height': '400px'},
+                    srcDoc=plotPublishers(top_val='15')),
+         dcc.Slider(0, 25, 5,
+               value=15,
+               id='platforms-slider')
     ])
 
 app.title = "Video Game Sales"
@@ -113,7 +132,7 @@ content = html.Div([
                             publishersFigure()
                         ]),
                         dbc.Col([
-                            # Heat map
+                            platformsFigure()
                         ]),
                 ]),
             ],
