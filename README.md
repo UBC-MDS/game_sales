@@ -58,6 +58,20 @@ In order to run our app locally please follow these steps:
 2. Navigate to the cloned repository within your console.
 3. Run the command `python src/app.py`, this should launch the app in a local web browser.
 
+*Note that it may be nesessary to make the following changes when running locally*
+
+*in the app.py file, change*
+
+`from src.line_charts import *`  
+`from src.publishers import *`  
+`from src.platforms import *`  
+
+to
+
+`from line_charts import *`  
+`from publishers import *`  
+`from platforms import *` 
+
 # Want to get involved?
 
 Have an idea/contribution that you would like to see implemented? The more the merrier!
