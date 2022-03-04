@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 # data = pd.read_csv("data/raw/vgsales.csv")
-data = pd.read_csv("/game_sales/data/raw/vgsales.csv")
+data = pd.read_csv("../data/raw/vgsales.csv")
 
 # wrangling data
 

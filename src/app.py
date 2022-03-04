@@ -4,12 +4,12 @@ import pandas as pd
 import numpy as np
 import dash_bootstrap_components as dbc
 
-import sys
+#import sys
 
-sys.path.append("/game_sales/src/")
+#sys.path.append("/game_sales/")
 
-from .line_charts import *
-from .publishers import *
+from line_charts import *
+from publishers import *
 
 #alt.data_transformers.enable('data_server')
 # alt.renderers.enable('default')
