@@ -7,8 +7,8 @@ import dash_bootstrap_components as dbc
 import sys
 
 sys.path.append("/app/")
-from line_charts import *
-from publishers import *
+from .line_charts import *
+from .publishers import *
 
 #alt.data_transformers.enable('data_server')
 # alt.renderers.enable('default')
