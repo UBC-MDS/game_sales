@@ -11,7 +11,7 @@ For milestone 2 our team has been able to implement every major feature proposed
 
 The idea had been floated to include a heat map visualization of game genres by publisher but because this data set contains hundreds of unique publishers the resulting plot ended up being wider than the entire screen. We ultimately decided that this plots contribution to the overall dashboard was negligible, if not harmful, and we decided not to include it.
 
-# Performs well
+# Performs Well
 
 As intended, our dashboard is very intuitive to use and understand. This dashboard was intended to provide a very high level overview of gaming industry sales with a few common-sense filters and we believe that it succeeds in doing so. 
 
