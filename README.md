@@ -56,7 +56,7 @@ Using our app online is as easy as clicking the Heroku [link](https://game-sales
 In order to run our app locally please follow these steps:
 1. Clone the [repository](https://github.com/UBC-MDS/game_sales.git) to your local machine.
 2. Navigate to the cloned repository within your console.
-3. Run the command `python app.py`
+3. Run the command `python app.py`, this should launch the app in a local web browser.
 
 # Want to get involved?
 
@@ -71,7 +71,7 @@ Contributors are welcome to add to the project in whatever way they like.
 Some specific things we feel could add tremendous value are:
 - Functionality to automatically update the dataset as figures change year-to-year.
 - Visual design.
-- More advanced ALtair plot functionality.
+- More advanced Altair plot functionality.
 
 ## Contact
 
