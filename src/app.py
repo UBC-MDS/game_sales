@@ -5,9 +5,9 @@ import numpy as np
 import dash_bootstrap_components as dbc
 
 import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../line_charts')))
 
-sys.path.append("/app/")
-print(sys.path)
 from line_charts import *
 from publishers import *
 
