@@ -7,7 +7,7 @@ import dash_bootstrap_components as dbc
 import sys
 
 sys.path.append("/app/")
-
+print(sys.path)
 from line_charts import *
 from publishers import *
 
