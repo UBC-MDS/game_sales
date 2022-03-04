@@ -6,10 +6,10 @@ import dash_bootstrap_components as dbc
 
 #import sys
 
-sys.path.append("/game_sales/src/")
+#sys.path.append("/game_sales/src.")
 
-from line_charts import *
-from publishers import *
+from src.line_charts import *
+from src.publishers import *
 
 #alt.data_transformers.enable('data_server')
 # alt.renderers.enable('default')
