@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 
 import sys
 
-sys.path.append("/app/")
+sys.path.append("/game_sales/")
 
 from .line_charts import *
 from .publishers import *
