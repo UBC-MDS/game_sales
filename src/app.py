@@ -4,9 +4,6 @@ import pandas as pd
 import numpy as np
 import dash_bootstrap_components as dbc
 
-#import sys
-
-#sys.path.append("/game_sales/src.")
 
 from src.line_charts import *
 from src.publishers import *

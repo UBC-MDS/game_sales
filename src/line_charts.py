@@ -2,9 +2,10 @@ import altair as alt
 import pandas as pd
 import numpy as np
 
-alt.data_transformers.disable_max_rows()
+
+
 # data = pd.read_csv("data/raw/vgsales.csv")
-data = pd.read_csv("../data/raw/vgsales.csv")
+data = pd.read_csv("/data/raw/vgsales.csv")
 
 # wrangling data
 
