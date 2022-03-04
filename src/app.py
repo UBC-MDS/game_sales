@@ -7,7 +7,7 @@ import dash_bootstrap_components as dbc
 from line_charts import *
 from publishers import *
 
-# alt.data_transformers.enable('data_server')
+alt.data_transformers.enable('data_server')
 # alt.renderers.enable('default')
 
 app = Dash(__name__,  external_stylesheets=[dbc.themes.BOOTSTRAP])
