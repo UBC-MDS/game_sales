@@ -2,7 +2,8 @@ import altair as alt
 import pandas as pd
 import numpy as np
 
-sales = pd.read_csv("data/raw/vgsales.csv")
+alt.data_transformers.disable_max_rows()
+sales = pd.read_csv("../data/raw/vgsales.csv")
 def plotPublishers(top_val):
     top_publishers = sales["Publisher"].value_counts().head(int(top_val)).index.tolist()
     top_publishers_df = sales.query("Publisher in @top_publishers").head(4900)
