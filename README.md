@@ -56,7 +56,7 @@ Using our app online is as easy as clicking the Heroku [link](https://game-sales
 In order to run our app locally please follow these steps:
 1. Clone the [repository](https://github.com/UBC-MDS/game_sales.git) to your local machine.
 2. Navigate to the cloned repository within your console.
-3. Run the command `python app.py`, this should launch the app in a local web browser.
+3. Run the command `python src/app.py`, this should launch the app in a local web browser.
 
 # Want to get involved?
 
