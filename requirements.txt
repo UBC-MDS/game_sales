@@ -23,4 +23,3 @@ dash_bootstrap_components
 plotly
 numpy
 vega_datasets
-sys
