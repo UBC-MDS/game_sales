@@ -1,6 +1,6 @@
 # Game Sales Dashboard
 
-game_sales is an interactive dashboard that allows users to easily visualize and filter high level sales information from the video games industry.
+Game Sales is an interactive dashboard that allows users to easily visualize and filter high level sales information from the video games industry.
 
 * [Purpose](#Purpose)
 * [Overview](#Overview)
