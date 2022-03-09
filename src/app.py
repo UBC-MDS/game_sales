@@ -5,15 +5,15 @@ import numpy as np
 import dash_bootstrap_components as dbc
 
 
-from src.line_charts import *
-from src.publishers import *
-from src.platforms import *
+from line_charts import *
+from publishers import *
+from platforms import *
 
 #alt.data_transformers.enable('data_server')
 # alt.renderers.enable('default')
 
 app = Dash(__name__,  external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+app.title = "Video Game Sale Dashboard"
 server = app.server
 
 # Call backs
