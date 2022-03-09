@@ -53,20 +53,6 @@ Using our app online is as easy as clicking the Heroku [link](https://dsci-532-2
 
 ## Run the app locally
 
-### To run this app using Docker write the following commands after cloning the repo:
-
-```bash
-cd game_sales
-docker-compose build
-docker-compose up
-```
-### To run this app without Docker
-
-1. Clone the [repository](https://github.com/UBC-MDS/game_sales.git) to your local machine.
-2. Navigate to the cloned repository within your console.
-`cd game_sales` 
-3. Run the command `python src/app.py`, this should launch the app in a local web browser.
-
 *Note that it may be nesessary to make the following changes when running locally*
 
 *in the app.py file, change*
@@ -80,6 +66,22 @@ to
 `from line_charts import *`  
 `from publishers import *`  
 `from platforms import *` 
+
+### To run this app using Docker write the following commands after cloning the repo:
+
+```bash
+cd game_sales
+docker-compose build
+docker-compose up
+```
+Finally, open the app in the followin URL http://localhost:8000/
+
+### To run this app without Docker
+
+1. Clone the [repository](https://github.com/UBC-MDS/game_sales.git) to your local machine.
+2. Navigate to the cloned repository within your console.
+`cd game_sales` 
+3. Run the command `python src/app.py`, this should launch the app in a local web browser.
 
 # Want to get involved?
 
