@@ -51,11 +51,20 @@ Users will be able to observe the evolution of sales of the video game industry 
 
 Using our app online is as easy as clicking the Heroku [link](https://dsci-532-2022-gamesales.herokuapp.com/)!
 
-## Local
+## Run the app locally
 
-In order to run our app locally please follow these steps:
+### To run this app using Docker write the following commands after cloning the repo:
+
+```bash
+cd game_sales
+docker-compose build
+docker-compose up
+```
+### To run this app without Docker
+
 1. Clone the [repository](https://github.com/UBC-MDS/game_sales.git) to your local machine.
 2. Navigate to the cloned repository within your console.
+`cd game_sales` 
 3. Run the command `python src/app.py`, this should launch the app in a local web browser.
 
 *Note that it may be nesessary to make the following changes when running locally*
