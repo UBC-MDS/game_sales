@@ -5,9 +5,9 @@ import numpy as np
 import dash_bootstrap_components as dbc
 
 
-from line_charts import *
-from publishers import *
-from platforms import *
+from src.line_charts import *
+from src.publishers import *
+from src.platforms import *
 
 #alt.data_transformers.enable('data_server')
 # alt.renderers.enable('default')
