@@ -39,7 +39,7 @@ def plotLineGlobal(genre):
                    legend=alt.Legend(title=None)))
 
     brush = alt.selection_interval(encodings=['x'])
-    lower = lines.properties(height=60).add_selection(brush)
+    lower = lines.properties(height=60, title="Select For Zoom").add_selection(brush)
     upper = lines.encode(alt.X('Year:T', scale=alt.Scale(domain=brush)))
     chart = upper & lower
     return chart.to_html()
@@ -52,7 +52,7 @@ def plotLineGenre(genre, region):
     y=alt.Y('mean(Sales)', axis=alt.Axis(title='Mean Sales in Millions', grid=True)))
 
     brush = alt.selection_interval(encodings=['x'])
-    lower = lines.properties(height=60).add_selection(brush)
+    lower = lines.properties(height=60, title="Select For Zoom").add_selection(brush)
     upper = lines.encode(alt.X('Year:T', scale=alt.Scale(domain=brush)))
     chart = upper & lower
     return chart.to_html()

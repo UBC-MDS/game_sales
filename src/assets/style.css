@@ -1,15 +1,55 @@
 #sidebar {
-    background: linear-gradient(to right, lightsalmon, white);
+    background: linear-gradient(to right, rgb(93, 176, 253), white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20rem;
+    padding: 2rem 1rem;
 }
 
-div > h2 {
+#sidebar > h1 {
     color: black;
     font-family: "Comic Sans MS";
     font-weight: bold;
     width: 75%; 
 }
 
-div > h5 {
-    color: red;
+#page-content {
+    margin-left: 21rem;
+    margin-right: 2rem;
+    padding: 2rem 1rem;
 }
 
+#page-content > hr {
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray"
+}
+
+#page-content > h1 {
+    color: black;
+    font-weight: bold;
+    width: 75%; 
+}
+
+div > h5 {
+    color: black;
+}
+
+#line_global, #line_genre {
+    border-width: 0;
+    width: 100%;
+    height: 550px;
+}
+
+#publishers, #platforms {
+    border-width: 0;
+    width: 100%;
+    height: 400px;
+}
+
+#title {
+    margin-left: 21rem;
+}
