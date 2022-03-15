@@ -73,7 +73,7 @@ def platformsFigure():
 app.title = "Video Game Sales"
 
 sidebar = html.Div([
-        html.H2('Menu'),
+        html.H1('Menu'),
         html.Br(),
         html.H5('Genre'),
         dcc.Dropdown(
@@ -101,6 +101,7 @@ sidebar = html.Div([
 
 content = html.Div([
                 html.H1("Video Game Sales", id='title'),
+                html.Hr(),
                 dbc.Row([
                         dbc.Col([
                             lineGlobalFigure()
@@ -109,7 +110,7 @@ content = html.Div([
                             lineGenreFigure()
                         ]),
                 ]),
-
+                html.Hr(),
                 dbc.Row([
                         dbc.Col([
                             publishersFigure()
