@@ -5,9 +5,9 @@ import numpy as np
 import dash_bootstrap_components as dbc
 
 
-from src.line_charts import *
-from src.publishers import *
-from src.platforms import *
+from line_charts import *
+from publishers import *
+from platforms import *
 
 #alt.data_transformers.enable('data_server')
 # alt.renderers.enable('default')
@@ -64,10 +64,7 @@ def publishersFigure():
         html.Iframe(
                     id=f'publishers',
                     style={'border-width': '0', 'width': '100%', 'height': '400px'},
-                    srcDoc=plotPublishers(top_val='10')),
-         dcc.Slider(0, 20, 5,
-               value=10,
-               id='topn-slider')
+                    srcDoc=plotPublishers(top_val='10'))
     ])
 
 def platformsFigure():
@@ -75,10 +72,7 @@ def platformsFigure():
         html.Iframe(
                     id=f'platforms',
                     style={'border-width': '0', 'width': '100%', 'height': '400px'},
-                    srcDoc=plotPublishers(top_val='15')),
-         dcc.Slider(0, 25, 5,
-               value=15,
-               id='platforms-slider')
+                    srcDoc=plotPublishers(top_val='15'))
     ])
 
 app.title = "Video Game Sales"
@@ -113,7 +107,17 @@ sidebar = html.Div([
         dcc.Dropdown(
             id='region_f',
             value='North America',
-            options=[{'label': i, 'value': i} for i in getRegions()])
+            options=[{'label': i, 'value': i} for i in getRegions()]),
+        html.Br(),
+        html.H5('Number of Publishers'),  
+        dcc.Slider(0, 20, 5,
+               value=10,
+               id='topn-slider'),
+        html.Br(),
+        html.H5('Number of Platforms'),       
+        dcc.Slider(0, 25, 5,
+               value=15,
+               id='platforms-slider')
         ],
     id="sidebar", style=SIDEBAR_STYLE)
 
