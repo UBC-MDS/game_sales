@@ -33,9 +33,10 @@ def lineGenreCallback(genre, region):
 
 @app.callback(
     Output('publishers', 'srcDoc'),
-    Input('topn-slider', 'value'))
-def update_output(value):
-    return plotPublishers(value)
+    Input('topn-slider', 'value'),
+    Input('year-slider', 'value'))
+def update_output(value, daterange):
+    return plotPublishers(value, daterange)
 
 
 @app.callback(
