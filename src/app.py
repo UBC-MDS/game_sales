@@ -40,9 +40,10 @@ def update_output(value):
 
 @app.callback(
     Output('platforms', 'srcDoc'),
-    Input('platforms-slider', 'value'))
-def update_output(value):
-    return plotPlatforms(value)
+    Input('platforms-slider', 'value'),
+    Input('year-slider', 'value'))
+def update_output(value, daterange):
+    return plotPlatforms(value, daterange)
 
 
 # Chart drawing functions
