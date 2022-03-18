@@ -95,7 +95,13 @@ sidebar = html.Div([
         html.H5('Number of Platforms'),       
         dcc.Slider(0, 25, 5,
                value=15,
-               id='platforms-slider')
+               id='platforms-slider'),
+        html.Br(),
+        html.H5('Date range'),       
+        dcc.RangeSlider(1980, 2016,
+               value=[1980, 2016],
+               marks={1980:'1980', 1985:'1985', 1990:'1990', 1995:'1995', 2000:'2000', 2005:'2005', 2010:'2010', 2016:'2016'},
+               id='year-slider'),
         ],
     id="sidebar")
 
