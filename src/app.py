@@ -33,9 +33,10 @@ def lineGenreCallback(genre, region):
 
 @app.callback(
     Output('publishers', 'srcDoc'),
-    Input('topn-slider', 'value'))
-def update_output(value):
-    return plotPublishers(value)
+    Input('topn-slider', 'value'),
+    Input('year-slider', 'value'))
+def update_output(value, daterange):
+    return plotPublishers(value, daterange)
 
 
 @app.callback(
@@ -98,7 +99,7 @@ sidebar = html.Div([
                value=15,
                id='platforms-slider'),
         html.Br(),
-        html.H5('Date range'),       
+        html.H5('Bar chart date range'),       
         dcc.RangeSlider(1980, 2016,
                value=[1980, 2016],
                marks={1980:'1980', 1985:'1985', 1990:'1990', 1995:'1995', 2000:'2000', 2005:'2005', 2010:'2010', 2016:'2016'},
